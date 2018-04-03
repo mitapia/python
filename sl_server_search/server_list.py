@@ -11,11 +11,11 @@ class ServerList:
         """Return a new ServerList object"""
         self.server_list = SLFile.convert_csv_to_dict_list(csv_file)
 
-    def filter(self, column_name, value_to_filter):
+    def filter(self, column_name, list_of_values_to_filter):
         """Return the new filtered list"""
         new_server_list = []
         for item in self.server_list:
-            if value_to_filter in item[column_name]:
+            if any(value in item[column_name] for value in list_of_values_to_filter):
                 new_server_list.append(item)
         self.server_list = new_server_list
         return self.server_list
@@ -26,3 +26,11 @@ class ServerList:
         for item in self.server_list:
             available_options_set.add(item[column_name])
         return available_options_set
+
+    def available_count(self):
+        """Return a count of all available servers in current server_list"""
+        return len(self.server_list)
+
+    def get_first(self):
+        """Returns the first server on list."""
+        return self.server_list[0]
