@@ -1,4 +1,0 @@
-Hardware Id,Hardware Status,Location,SoftLayer Serial Number,Hardware Function,Manufacturer,Model,Version,Drive Capacity,Power Capacity,Unit Size,Processor Model (Expand Row to view additional models),Hard Drive Model (Expand Row to view additional models),Ram Model (Expand Row to view additional models),Motherboard Model,Drive Controller Model (Expand Row to view additional models),Days old
-1,INVENTORY,dal07.sr01.rk86.sl16,SL65498,Web Server,SuperMicro,SMCH12,2u \ 12D,12,2,2,2650,ST36,16GB,X10DRU,LSI,
-2,INVENTORY,dal07.sr01.rk01.sl38,SL987654,Web Server,SuperMicro,SMCH04,1u \ 4D,4,1,1,2620,ST10,4GB,X9DRI,Onboard,
-3,INVENTORY,dal07.sr01.rk74.sl26,SL98745,Web Server,SuperMicro,SMCH04,1u \ 4D rev 2,4,2,1,2650,ST10,8GB,X10DRU,Onboard,
